@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+}
+
+.container {
+    max-width: 1340px;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+/* Text Area */
+.input-area {
+    width: 100%;
+    height: 250px;
+    margin: 30px 0;
+    font-size: 20px;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.input-area:focus {
+    outline: none;
+    border-color: #74ebd5;
+    box-shadow: inset 0 5px 15px rgba(116, 235, 213, 0.3);
+}
+
+/* Button Section */
+.button-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.button-section button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px; /* Makes buttons responsive */
+}
+
+.button-section button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-section button:active {
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding button colors for variety */
+.button-section .uppercase {
+    background-color: #007BFF;
+}
+
+.button-section .lowercase {
+    background-color: #FFC107;
+}
+
+.button-section .capitalize {
+    background-color: #17A2B8;
+}
+
+.button-section .copy {
+    background-color: #28A745;
+}
+
+.button-section .clear {
+    background-color: #DC3545;
+}
+
+.button-section .reset {
+    background-color: #6C757D;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; 
+    }
+
+    .input-area {
+        height: 200px; 
+        font-size: 18px; 
+    }
+
+    .navbar h1 {
+        font-size: 24px; 
+    }
+
+    .button-section button {
+        font-size: 16px; 
+        padding: 10px 20px; 
+        flex: 1 1 150px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 20px; 
+    }
+
+    .button-section button {
+        font-size: 14px; 
+        padding: 8px 15px; 
+    }
+}
